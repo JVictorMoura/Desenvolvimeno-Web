@@ -1,0 +1,29 @@
+.text-container {
+    width: 800px;
+    text-align: justify;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+button {
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+li {
+    font-size: 25px;
+}
