@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="triangulo"></p>
+    <button
+    onclick="fors(10);"
+    >asdasd</button>
+
+    
+    <script>
+        let userChoice = 2;
+        let t = document.querySelector('.triangulo');
+        function fors(a){
+            for(let i = 0;i<=a; i++){
+                t.innerHTML += '<br>';
+                for(let j = 0;j < i; j++){
+                    t.innerHTML += '*';
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>
