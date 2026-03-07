@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuadant</title>
+    <style>
+        .ernopi-img{
+            width: 150px;
+            margin-left: 3%;
+        }
+        .content{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+        }
+        .content-center{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="content-center">
+    <div class="content">
+    <input type="text" id="number" placeholder="digite um numero">
+    <button
+    onclick="
+    tabuada();
+    "
+    >joao</button>
+     <img src="imgs/ernopi-estagiario.png" alt="" class="ernopi-img">
+    </div>
+    <div>
+    <p class="text"></p>
+    </div>
+   </div>
+
+    <script>
+        let text = document.querySelector('.text');
+        const escolhaDoUsuario = document.getElementById('number');
+        function tabuada() {
+            text.innerHTML=('');
+            let a = 1;
+            let resultado = 0;
+            let escolha = escolhaDoUsuario.value;
+            if(escolha === '0') {text.innerHTML=('');}
+            else{
+            for(let i = 0; i < 10; i = i+1){
+               resultado = escolha * a;
+            text.innerHTML += (escolha+ ' x ' + a + '=' + resultado + '<br>');
+                a++;
+            }}
+            
+        }
+
+    </script>
+
+</body>
+
+</html>

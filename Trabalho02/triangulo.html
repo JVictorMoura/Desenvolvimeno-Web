@@ -6,22 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    <p class="triangulo"></p>
+    <input type="number" id="a">
     <button
-    onclick="fors(10);"
+    onclick="fors();"
     >asdasd</button>
+    <p class="triangulo"></p>
 
     
     <script>
-        let userChoice = 2;
+        const userChoice = document.getElementById('a');
         let t = document.querySelector('.triangulo');
-        function fors(a){
-            for(let i = 0;i<=a; i++){
-                t.innerHTML += '<br>';
+        function fors(){
+            t.innerHTML = ""
+            let a = userChoice.value;
+            for(let i = 0; i<=a; i++){
+                
                 for(let j = 0;j < i; j++){
                     t.innerHTML += '*';
                 }
+                t.innerHTML += '<br>';
             }
+            
         }
         
     </script>
