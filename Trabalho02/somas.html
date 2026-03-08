@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="number" id="number">
+    <p class="text"></p>
+    <button onclick="minhaMulherEhLinda()">Somar</button>
+
+
+
+    <script>
+        var input = document.getElementById('number');
+        function minhaMulherEhLinda() {
+            var b;
+            var c = '';
+            var d = document.querySelector('.text');
+            var a = Number(input.value);
+            for (let i = 1; i <= a; i++) {
+                c += '+';
+                for (let j = 0; j < i; j++) {
+                    c += '1';
+
+                }
+
+
+            }
+            
+            d.innerHTML = eval(c) + '<br>' + c.replace("+", "");
+            if(d.innerHTML === "undefined"){
+                d.innerHTML = "";//funcionou n
+            }
+        }
+        
+
+    </script>
+</body>
+
+</html>
